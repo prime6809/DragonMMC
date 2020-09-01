@@ -1,0 +1,33 @@
+DosDoReadSec	defined 385
+	Called 
+	1744	in SuperdosSyncDir
+	3502	in SuperDosReadAbsSector after LSN calc
+	4940	in CmdBoot : Only reads track 0 head 0 
+	5040	in CmdSread
+	
+DosDoReadSec2	defined 448
+	Called 
+	588 	in SuperDosLowLevel
+	1162	
+	1298
+	3489	in SuperDosWriteAbsSector after LSN calc
+	4931	in CmdBoot : Only reads track 0 head 0 
+	
+DosDoWriteSec	defined 381
+	Called 
+	1213	in CmdDskInit
+	1217	in CmdDskInit
+	1240	in CmdDskInitErrorExit
+	1776	in SuperDosSyncDir
+	5106	in CmdSwrite
+	
+DosDoWriteSec2	defined 377
+	Called 
+	3483	in SuperDosWriteAbsSector after LSN calc
+
+DosDoSeek defined 452
+	Called 
+	395	in DosDoFuncinB
+	412	in DosDoFuncinB
+	1186	in CmdDskInit
+	

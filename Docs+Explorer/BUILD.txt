@@ -1,0 +1,30 @@
+This is the source archive for DragonMMC, it contains the following sections :
+
+
+AVRFirmware.	
+
+The firmware in C for the ATMega1284 microcontroller, to build this you will need the 
+AVR command line tools available from the Atmel / Microchip website. 
+Also included is the bootloader firmware for the microcontroller.
+
+
+Dragon Firmware.
+
+The 6809 code that makes up the new basic commands, DOS emulation and communication 
+with the AVR microcontroller. This is built with lwasm, available from the lwtools 
+website : http://www.lwtools.ca/
+
+Xilinx firmware. 
+
+The Verilog source and asociated support files needed to build the code for the 
+XC95144XL CPLD on the board. This handles signal routing address decoding and latching
+of data between the AVR microcontroller and the 6809.
+To build this you will need Xilinx Webpack, at the time of writing this is available 
+from : https://www.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.html
+
+
+Both the AVR and 6809 firmware is built from a Makefile, plus supporting utilities, if
+you use a Linux / Unix based operating system these will generally already be installed.
+If you use windows there are a number of options such as Cygwin / MINGW, under 
+Windows 10 you may also be able to used "Windows Services for Linux". I personally use 
+Cygwin.

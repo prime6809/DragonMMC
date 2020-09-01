@@ -1,0 +1,27 @@
+DosCmdNames   
+		FCS     /AUTO/
+        FCS     /BACKUP/
+        FCS     /BEEP/
+        FCS     /BOOT/
+        FCS     /CHAIN/
+        FCS     /COPY/
+        FCS     /CREATE/
+        FCS     /DIR/
+        FCS     /DRIVE/
+        FCS     /DSKINIT/
+        FCS     /FREAD/
+        FCS     /FWRITE/
+        FCS     /ERROR/
+        FCS     /KILL/
+        FCS     /LOAD/
+        FCS     /MERGE/
+        FCS     /PROTECT/
+        FCS     /WAIT/
+        FCS     /RENAME/
+        FCS     /SAVE/
+        FCS     /SREAD/
+        FCS     /SWRITE/
+        FCS     /VERIFY/
+        FCS     /FROM/
+        FCS     /FLREAD/
+        FCS     /SWAP/

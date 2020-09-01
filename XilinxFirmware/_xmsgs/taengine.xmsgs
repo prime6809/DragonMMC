@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;ROMA14.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RomWE.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RamEnable.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RamWP.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;IntRAMWP.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RAMVec.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;FIRQEn.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;NMIEn.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;PIAReg.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RamRPtr&lt;0&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RamRPtr&lt;1&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RamRPtr&lt;2&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RamRPtr&lt;3&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RamWPtr&lt;0&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RamWPtr&lt;1&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RamWPtr&lt;2&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;RamWPtr&lt;3&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;AddrLatch&lt;0&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;AddrLatch&lt;1&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;AddrLatch&lt;2&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;AddrLatch&lt;3&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;MotorON.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;1&gt;&apos; &apos;Addr&lt;0&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;DragonRW.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;DragonToAVR&lt;0&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;DragonToAVR&lt;1&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;DragonToAVR&lt;2&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;DragonToAVR&lt;3&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;DragonToAVR&lt;4&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;DragonToAVR&lt;5&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;DragonToAVR&lt;6&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;DragonToAVR&lt;7&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;3&gt;&apos; &apos;Addr&lt;2&gt;&apos; &apos;Addr&lt;4&gt;&apos; &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;15&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;0&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;10&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;11&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;12&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;13&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;14&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;1&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;2&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;3&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;4&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;5&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;6&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;7&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;8&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+<msg type="warning" file="Cpld" num="0" delta="new" >Possible asynchronous logic: Clock pin &apos;SAMBits&lt;9&gt;.CLKF&apos; has multiple original clock nets &apos;Addr&lt;10&gt;&apos; &apos;Addr&lt;11&gt;&apos; &apos;Addr&lt;12&gt;&apos; &apos;Addr&lt;13&gt;&apos; &apos;Addr&lt;14&gt;&apos; &apos;Addr&lt;15&gt;&apos; &apos;Addr&lt;8&gt;&apos; &apos;Addr&lt;9&gt;&apos; &apos;RW&apos; &apos;E&apos; &apos;Reset&apos; &apos;Addr&lt;5&gt;&apos; &apos;Addr&lt;7&gt;&apos; &apos;Addr&lt;6&gt;&apos; 
+</msg>
+
+</messages>
+

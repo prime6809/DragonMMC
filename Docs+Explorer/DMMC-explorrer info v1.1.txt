@@ -1,0 +1,140 @@
+DMMC explorer
+=============
+
+VARS
+====
+TRUE
+FALSE
+AEXEC true if AUTOEXEC is enabled
+DS  true if DOS is enabled
+CLOCK if clock is enabled at boot
+DOT	 true if ._ files are hidden 
+MAX  number of items in the folder
+MR   max number of rows on screen
+CF   current file DI position
+CP   Current cursor print @ position
+REFRESH Bolean set if the screen and DI needs refrshing
+UPDATE boolean true if the screen should be updated
+FILES number of files on screen
+NEX number of known file extensions
+NBYTES number of bytes in the inverse function
+
+CC Boolean true if the system is CoCo
+
+ROW the current row (starts at 1)4020
+COL the current col (0 or 1)
+page the current page (starts at 0)
+
+DI$ (1..255) list of the items in the folder, blank is last entry
+MD$ (1..4) mounted disks
+FEXT$ (1-10) known file extentions
+CC$ Cursor string
+BC$ blank cursor
+KEY$ Key input
+WD$ The current worklng directory
+
+
+
+Temp VARS
+=========
+CH
+II
+WI
+C
+I
+FERROR%		filter error string
+invalid$
+N$
+IN$
+KEY 		assci vall of KEY$
+EXT$		selected file extention (after pressing enter)
+YL
+OKtrustno1
+
+COL
+A$
+
+
+Clock VARS
+==========
+YY YY$
+MM MM$
+DD DD$
+HH HH$
+MI MI$
+DT$
+
+
+-------------------------------------------
+
+FILE EXTENTION DATA
+1 .CAS 2800
+2 .ROM 2400
+3 .VDK 6200
+4 .DGN 2600
+5 .BIN 2600
+6 .BAS 2600
+7 .SSD 3400
+8 .CCO 2600
+9 .DSK 6200
+10.SSC 3400
+11.CCC 2400
+
+------------------------------------------
+
+10-200   Setup
+
+200-350  Draw explorer screen
+350 INKEY$ main
+
+950 Exit point
+1000 Populate folder array list
+1200 read config vars: AEXEC, DOS, CLOCK
+1400 SET config from vars: AEXEC, DOS, CLOCK
+
+
+2000 RETURN key
+2400 load ROM
+2600 load DGN/BIN/BAS
+2800 load .CAS file
+2900 change folder
+
+3000 UP KEY
+3200 populate mounted disks array  MD$ 
+3400 Load Snapshot
+
+
+4000 DOWN key
+4500 Page down
+4600 Page up
+4700 @ key go down tree
+
+5000 RIGHT key
+5200 New Folder
+5500 Set snapshot directory
+
+6000 list mounted disks
+6200 mount a disks
+6500 unmount disks
+6700 mount .CAS file
+
+7000 delete a file
+7500 Set dir filter
+
+8000 Version Info
+8200 Change boot option
+8500 clock adjust
+
+9000 work out the current DI$() position - updates into CF
+
+9200 Draw horz line
+9400 Menu for unkown file types
+9700 set clock
+
+10000 HELP
+
+20000 DATA for file extensions
+20100 populate FEXT$ array
+20200 Inverse DATA code
+20400 Poke in the inverse function
+

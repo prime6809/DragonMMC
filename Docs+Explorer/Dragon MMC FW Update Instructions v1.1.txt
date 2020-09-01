@@ -1,0 +1,65 @@
+Dragon MMC F/W Update Instructions
+==================================
+
+
+Getting Started
+---------------
+The firmware files for any update should be placed onto a freshly formatted memory card. Some releases require updates to multiple components, ensure all updates in each release are applied for consistent operation.
+
+N.B. As with all firmware updates do NOT reset or turn off the computer whilst an update is in progress. 
+
+
+Update AVR Firmware
+-------------------
+Files required on memory card: DGNMMC.BIN
+
+1) Turn on the computer with the memory card in the slot
+2) At the BASIC prompt type:
+     HELP
+3) For Dragon MMC V1.0 type:
+     MSETCFG &H80,0
+4) For Dragon MMC V1.1 or greater type:
+     MSETCFGS &H80,0
+5) Press the reset AVR reset button 
+6) The DMMC LEDs will flicker for about 5 seconds whilst the upgrade takes place
+7) Allow at least 20 seconds for the operation to complete
+8) Turn the computer off and on for the change to take effect
+
+
+
+Update 6809 ROM
+---------------
+Files required on memory card: DGNMMC.ROM, FLASH.DGN
+
+1) Turn on the computer with the memory card in the slot 
+2) At the BASIC prompt type: 
+     MDISK OFF
+3) After the reboot, turn the computer off
+4) Ensure the ROM Write Protect jumper (JP2) is set to WE 
+5) Turn on the computer with the memory card in the slot 
+6) At the BASIC prompt type:
+     MLOADA"FLASH.DGN"
+7) The update progress is displayed on screen
+8) When prompted press a key to reset the computer
+9) If using disk emulation at the BASIC prompt type: 
+     MDISK ON
+10) After the reboot, turn the computer off and move the jumper back to RO
+11) Switch the computer back on
+
+
+Update the CPLD
+---------------
+Files required on memory card: DGNMMC.SVF
+
+1) Turn the computer off 
+2) Ensure the update CPLD jumper 1 to set to ON
+3) Turn the computer on with the memory card in the slot
+4) The CPLD will be automatically updated, this may take 30 seconds to a minute, when complete both DMMC LEDs will go out
+Note: the ROM and RAM are enabled by the CPLD, so whilst this is taking place the computer will display just the normal BASIC (C) message.
+5) When complete switch the computer off and remove the update jumper
+6) Switch the computer back on
+
+
+Update Instructions Ver 1.1
+Dragon / CoCo SD/MMC Mk 2.40
+Date 05/05/2018

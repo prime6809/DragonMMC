@@ -1,0 +1,2 @@
+sck 8
+quit

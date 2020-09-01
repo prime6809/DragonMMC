@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\phill\Dropbox\Dragon\DragonMMC-github\XilinxFirmware\impact.xsl
+OUTFILE=C:\Users\phill\Dropbox\Dragon\DragonMMC-github\XilinxFirmware\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\phill\Dropbox\Dragon\DragonMMC-github\XilinxFirmware
+LICENSE=iMPACT
+USER_INFO=iMPACT
