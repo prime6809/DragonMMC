@@ -537,8 +537,8 @@ MMC_LoadTail
 		beq		MMC_LoadFileExit	; nope : exit
 		lbsr	MMC_ReadFileBlock	; load last block
 		
-		leas	2,s					; drop saved count
 MMC_LoadFileExit
+		leas	2,s					; drop saved count
 		clra
 		rts
 
