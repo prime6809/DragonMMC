@@ -1,0 +1,100 @@
+#
+# Makefile for building the OS-9 modules (and utilities) for DragonMMC
+#
+
+AS=lwasm.exe
+ASFLAGS=--6809 -fos9 --pragma=condundefzero,nosymbolcase -I defs 
+ASOUTM=-omods
+ASOUTC=-ocmds
+ASLIST=-llist
+
+MODLIST=mdisk mboot d0 d1 d2 d3
+MODS=modules.os9
+CMDLIST=loadat mcat mdsk
+CMDS=mmcutils.os9
+DMMC=1
+ATTRS=-e -q
+
+all: allmods allcmds disks
+
+allmods: $(MODLIST)
+
+allcmds: $(CMDLIST)
+
+#
+# Modules disk files
+#
+
+floppies: d0 d1 d2 d3
+
+mdisk: dmmcdisk.asm
+	$(AS) $(ASFLAGS) $(ASLIST)/$@.lst $(ASOUTM)/$@ $<
+
+mboot: boot_dmmc.asm
+	$(AS) $(ASFLAGS) $(ASLIST)/$@.lst $(ASOUTM)/$@ $<
+
+#
+# Utilities disk files
+#
+
+mcat: mcat.asm
+	$(AS) $(ASFLAGS) $(ASLIST)/$@.lst $(ASOUTC)/$@ $<
+
+loadat: loadat.asm
+	$(AS) $(ASFLAGS) $(ASLIST)/$@.lst $(ASOUTC)/$@ $<
+	
+mdsk: mdsk.asm
+	$(AS) $(ASFLAGS) $(ASLIST)/$@.lst $(ASOUTC)/$@ $<
+
+clean:
+	rm -f mods/*
+	rm -f cmds/*
+	rm -f list/*
+	rm -f *.os9
+
+MODFILES=$(foreach file,$(MODLIST),$(MODS),mmc/$(file))
+CMDFILES=$(foreach file,$(CMDLIST),$(CMDS),cmds/$(file))
+
+moddisk: allmods
+	os9 format -dr -t40 -e $(MODS)
+	os9 makdir $(MODS),mmc
+	os9 makdir $(MODS),os9
+	os9 copy mods/* $(MODS),mmc
+	os9 attr $(ATTRS) $(MODFILES)
+
+cmddisk: allcmds
+	os9 format -dr -t40 -e $(CMDS)
+	os9 makdir $(CMDS),cmds
+	os9 copy cmds/* $(CMDS),cmds
+	os9 attr $(ATTRS) $(CMDFILES)
+
+disks: moddisk cmddisk
+
+#
+# Drive descriptors, assume all are 80 track DSDD.
+#	
+
+STEP		= 0
+DSDD80		= -DCyls=80 -DSides=2 -DSectTrk=18 -DSectTrk0=18 \
+		-DInterlv=2 -DSAS=8 -DDensity=1 -DD35 -DSTEP=$(STEP) -DDMMC=$(DMMC)
+	
+d0: ddiskdesc.asm
+	$(AS) $(ASOUTM)/$@ $(ASFLAGS) $(DSDD80) -DDNum=0 $<
+	
+d1: ddiskdesc.asm
+	$(AS) $(ASOUTM)/$@ $(ASFLAGS) $(DSDD80) -DDNum=1 $<
+
+d2: ddiskdesc.asm
+	$(AS) $(ASOUTM)/$@ $(ASFLAGS) $(DSDD80) -DDNum=2 $<
+
+d3: ddiskdesc.asm
+	$(AS) $(ASOUTM)/$@ $(ASFLAGS) $(DSDD80) -DDNum=3 $<
+
+test:
+	@echo $(MODFILES)
+	
+DESTDIR = /cygdrive/g/Emulate/software/Dragon/disks/64/mods64	
+cp:	moddisk cmddisk
+	cp $(CMDS) $(DESTDIR)
+	cp $(MODS) $(DESTDIR)
+	

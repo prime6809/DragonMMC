@@ -1,0 +1,102 @@
+Notes on getting OS-9 working on DragonMMC.
+
+Requirements :
+
+boot_dmmc and diskdmmc from Nitros9 (currently not merged).
+LOADAT OS-9 command written by me.
+MODBUSTER OS-9 command part of Nitros-EOU project.
+The Toolshed tools from the Nitros9 project.
+
+The disk image was built with MESS running DragonData OS-9.
+
+Procedure :
+
+Format a blank disk image to hold the modules to build the system with 
+os9 format -d -t40 -e modules.os9
+
+Create folders for the OS9 and mmc modules :
+os9 makdir modules.os9,os9
+os9 makdir modules.os9,mmc
+
+Copy LOADAT and MODBUSTER to the modules disk :
+os9 copy loadat modules.os9,loadat
+os9 copy modbuster modules.os9,modbuster
+
+Copy boot_mmc diskmmc and the disk descriptors (From Nitros) to the disk
+os9 copy boot_dmmc ../modules.os9,mmc/boot
+os9 copy d0_40s.dd ../modules.os9,mmc/d0
+os9 copy d1_40s.dd ../modules.os9,mmc/d1
+os9 copy d2_40s.dd ../modules.os9,mmc/d2
+os9 copy d3_40s.dd ../modules.os9,mmc/d3
+os9 copy dmmcdisk.dr ../modules.os9,mmc/ddisk
+
+Create files containg the mmc bootlist (blmmc) :
+****************** NOTE ***************** 
+** MUST have correct (CR) line endings **
+*****************************************
+OS9/IOMAN
+OS9/RBF
+MMC/DDISK
+MMC/D0
+MMC/D1
+MMC/D2
+MMC/D3
+OS9/SCF
+OS9/KBVDIO
+OS9/TERM
+OS9/T1
+OS9/P1
+OS9/PRINTER
+OS9/P
+OS9/PIPEMAN
+OS9/PIPER
+OS9/PIPE
+OS9/CLOCK
+OS9/SYSGO
+OS9/SHELL
+
+copy this to the modules disk :
+os9 copy blmmc modules.os9,blmmc
+
+Boot OS-9 with the modules.os9 disk in /d1 and the boot disk in /d0
+put the disk to be prepared for mmc boot in /d3 a good example would 
+be a copy of the Dragon OS-9 disk, but ensure that it has enough room
+for the bootfile.
+
+In the OS-9 shell change directory to /d1/os9 and run modbuster, then 
+change back to the root of d1
+
+chd /d1/os9
+/d1/modbuster /d0/OS9Boot
+chd /d1
+
+This will extract the modules from the current OS-9 boot file to the
+/d1/os9 folder
+
+Before making the MMC boot disk we need to replace the boot module in 
+memory with the MMC one, this is safe to do as this code is only used 
+whilst booting the system. Once the main disk driver is running it is
+safe to replace it.
+
+To do this we will need to use the LOADAT command to load the new boot
+module over the top of the old one. The new one must obviously be smaller
+or equal size. 
+
+To find the Load address use the MDIR command with the E flag note the 
+starting address of boot (e.g. for me it was $FD75), you will also need
+the length of the replacement boot file this can be found with 
+DIR E /d1/mmc
+
+Once you have these you can load the new boot file :
+
+loadat FD75 013A /d1/mmc/boot
+
+Note both the address and size **MUST** be 4 digits.
+
+We are now ready to to make the boot disk with :
+
+os9gen /d3 < blmmc
+
+This will make the boot file on that disk, rewrite to boot track and
+link the new boot file, this should now be able to be booted from the 
+DragonMMC.
