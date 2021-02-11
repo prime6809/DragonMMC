@@ -1603,11 +1603,14 @@ void wfnCreateImg(void)
     DWORD MaxLSN; 
     DWORD LSN;
     UINT bytes_written;
+	uint32_t TotalWritten	= 0;
     
+	HexDumpHeadc(DEBUG_ENABLED,&globalData[0],16,0);
+	
     // Calculate the maximum logical sector no
     MaxLSN = Tracks * Heads * Sectors;
     
-    log0c(DEBUG_ENABLED,"wfnCreateImg: Tracks=%d, Heads=%d, Sides=%d, MaxLSN=%d\n",Tracks,Heads,Heads,MaxLSN);
+    log0c(DEBUG_ENABLED,"wfnCreateImg: Tracks=%d, Heads=%d, Sectors=%d, MaxLSN=%d\n",Tracks,Heads,Sectors,MaxLSN);
     
     //HexDumpHeadc(DEBUG_ENABLED,(uint8_t *)globalData,16,0);
     
@@ -1624,13 +1627,18 @@ void wfnCreateImg(void)
     // Clear a sectors worth of 0xFF, as RSDOS assumes this is written, DragonDos doesn't care!
     memset((void *)globalData,0xFF,SDDOS_SECTOR_SIZE);
     
+	log0c(DEBUG_ENABLED,"Filling %d sectors\n",MaxLSN);
+	
     // Fill all sectors
     for(LSN=0; LSN < MaxLSN; LSN++)
     {
         f_lseek(&driveFILE[Drive],(LSN * DDOS_SECTOR_SIZE)+driveInfo[Drive].HeaderSize);
         f_write(&driveFILE[Drive], (void *)&globalData[0], SDDOS_SECTOR_SIZE, &bytes_written);
+		TotalWritten += bytes_written;
     }
     
+	log0c(DEBUG_ENABLED,"Total bytes written=%d\n",TotalWritten);
+	
     // Sync the disk and save settings
     f_sync(&driveFILE[Drive]);
    	SaveSettings();
@@ -1866,9 +1874,6 @@ void wfnTapeUpdate(void)
     CPLDUpdateAsOutput();
     
 	log0("emulating tape output\n");
-//	log0("wait.....\n");
-//    _delay_ms(1000);
-//    log0("go....\n");
 	
 	if (LastCommand == CMD_CAS_EMULATE) 
 		strcpy_P((char *)globalData,PSTR(TapeFile));

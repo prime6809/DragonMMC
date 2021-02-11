@@ -2,35 +2,22 @@ Notes on getting OS-9 working on DragonMMC.
 
 Requirements :
 
-boot_dmmc and diskdmmc from Nitros9 (currently not merged).
-LOADAT OS-9 command written by me.
-MODBUSTER OS-9 command part of Nitros-EOU project.
+mboot and mdisk + d0,d1,d2,d3 modules on the modules.os9 
+disk image
+LOADAT and MODBUST OS-9 commands on the mmcutil.os9 disk image.
+LWTOOLS (specifically lwasm) available from http://www.lwtools.ca/
 The Toolshed tools from the Nitros9 project.
 
 The disk image was built with MESS running DragonData OS-9.
 
 Procedure :
 
-Format a blank disk image to hold the modules to build the system with 
-os9 format -d -t40 -e modules.os9
-
-Create folders for the OS9 and mmc modules :
-os9 makdir modules.os9,os9
-os9 makdir modules.os9,mmc
-
-Copy LOADAT and MODBUSTER to the modules disk :
-os9 copy loadat modules.os9,loadat
-os9 copy modbuster modules.os9,modbuster
-
-Copy boot_mmc diskmmc and the disk descriptors (From Nitros) to the disk
-os9 copy boot_dmmc ../modules.os9,mmc/boot
-os9 copy d0_40s.dd ../modules.os9,mmc/d0
-os9 copy d1_40s.dd ../modules.os9,mmc/d1
-os9 copy d2_40s.dd ../modules.os9,mmc/d2
-os9 copy d3_40s.dd ../modules.os9,mmc/d3
-os9 copy dmmcdisk.dr ../modules.os9,mmc/ddisk
+Run make in this directory, this will build all the required modules and
+make two disk images modules.os9 and mmcutil.os9
 
 Create files containg the mmc bootlist (blmmc) :
+This is created on the modules disk but is included here for refference.
+This is also the list for the Dragon, the CoCo list will be slightly different
 ****************** NOTE ***************** 
 ** MUST have correct (CR) line endings **
 *****************************************
@@ -55,11 +42,13 @@ OS9/CLOCK
 OS9/SYSGO
 OS9/SHELL
 
-copy this to the modules disk :
-os9 copy blmmc modules.os9,blmmc
+Boot OS-9 with the following disks in drives :
+d0: Standard OS-9 boot disk
+d1: modules.os9 
+d2: mmcutil.os9
+d3: Target disk to become mmc boot, e.g. a copy of standard boot disk.
 
-Boot OS-9 with the modules.os9 disk in /d1 and the boot disk in /d0
-put the disk to be prepared for mmc boot in /d3 a good example would 
+Put the disk to be prepared for mmc boot in /d3 a good example would 
 be a copy of the Dragon OS-9 disk, but ensure that it has enough room
 for the bootfile.
 
@@ -67,8 +56,12 @@ In the OS-9 shell change directory to /d1/os9 and run modbuster, then
 change back to the root of d1
 
 chd /d1/os9
-/d1/modbuster /d0/OS9Boot
+/d2/cmds/modbust /d0/OS9Boot
 chd /d1
+
+Alternately, modbust can have the output path specified :
+
+/d2/cmds/modbust /d0/OS9Boot /d1/os9
 
 This will extract the modules from the current OS-9 boot file to the
 /d1/os9 folder
@@ -89,9 +82,7 @@ DIR E /d1/mmc
 
 Once you have these you can load the new boot file :
 
-loadat FD75 013A /d1/mmc/boot
-
-Note both the address and size **MUST** be 4 digits.
+/d2/cmds/loadat FD75 13A /d1/mmc/boot
 
 We are now ready to to make the boot disk with :
 
@@ -100,3 +91,4 @@ os9gen /d3 < blmmc
 This will make the boot file on that disk, rewrite to boot track and
 link the new boot file, this should now be able to be booted from the 
 DragonMMC.
+

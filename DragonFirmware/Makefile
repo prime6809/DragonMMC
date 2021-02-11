@@ -6,7 +6,6 @@
 
 SHELL=/bin/bash
 AS=lwasm
-#ASFLAGS=-idefs -icmds -iutils -ifunc 
 ASFLAGS=-9 -r -I defs -I cmds -I utils -I func 
 ZIP=pkzip
 RM=rm

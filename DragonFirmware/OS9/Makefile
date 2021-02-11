@@ -10,7 +10,7 @@ ASLIST=-llist
 
 MODLIST=mdisk mboot d0 d1 d2 d3
 MODS=modules.os9
-CMDLIST=loadat mcat mdsk
+CMDLIST=loadat mcat mdsk modbust
 CMDS=mmcutils.os9
 DMMC=1
 ATTRS=-e -q
@@ -46,11 +46,14 @@ loadat: loadat.asm
 mdsk: mdsk.asm
 	$(AS) $(ASFLAGS) $(ASLIST)/$@.lst $(ASOUTC)/$@ $<
 
+modbust: modbust.asm
+	$(AS) $(ASFLAGS) $(ASLIST)/$@.lst $(ASOUTC)/$@ $<
+
 clean:
 	rm -f mods/*
 	rm -f cmds/*
 	rm -f list/*
-	rm -f *.os9
+#	rm -f *.os9
 
 MODFILES=$(foreach file,$(MODLIST),$(MODS),mmc/$(file))
 CMDFILES=$(foreach file,$(CMDLIST),$(CMDS),cmds/$(file))
@@ -61,6 +64,7 @@ moddisk: allmods
 	os9 makdir $(MODS),os9
 	os9 copy mods/* $(MODS),mmc
 	os9 attr $(ATTRS) $(MODFILES)
+	os9 copy -l blmmc $(MODS),blmmc
 
 cmddisk: allcmds
 	os9 format -dr -t40 -e $(CMDS)

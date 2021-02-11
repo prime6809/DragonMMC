@@ -639,6 +639,10 @@ void mmc_process(void)
 					}
 					log0c(DEBUG_ENABLED,"Platform set to %02X\n",globalFlag);
 					
+					// Load the settings here, as the rom always sets the platform when booting, that way
+					// we don't have to eject and insert the card to pick these up.
+					LoadSettings();
+					
 					WriteStatusCond(PlatformValid(globalFlag),STATUS_COMPLETE,(STATUS_ERROR | ERROR_INVALID_PLATFORM));  
 					ClearBusy();
 				}

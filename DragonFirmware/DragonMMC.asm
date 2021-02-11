@@ -95,7 +95,7 @@
 DEBUG		EQU	    0
 
 #Set to 1 for development version, mainly just affects signon message :)
-DEVEL		EQU		1
+DEVEL		EQU		0
 
 			use		cpudefs.asm
 			use		dgndefs.asm

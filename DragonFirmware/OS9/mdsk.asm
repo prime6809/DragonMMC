@@ -102,13 +102,13 @@ CheckCmd
 	beq	DoList
 	
 	cmpa	#'I'			; insert image command?
-	beq	DoInsertCreate
+	beq	DoInsert
 	
 	cmpa	#'O'			; remove image command?
 	beq	DoRemove			
 	
 	cmpa	#'C'			; create image command?
-	beq	DoInsertCreate
+	beq	DoCreate
 	
 	lbra	HelpMe			; Invalid command display help
 
@@ -166,6 +166,10 @@ CmdMDiskLEOL
 	
 	bra	ExitOK			; exit
 
+DoCreate
+	lda	#CMD_FILE_OPENCRE_IMG	; create image command
+	bra	DoInsertCreate		; go do it
+
 DoInsert
 	lda	#CMD_FILE_OPEN_IMG	; Open image
 
@@ -215,10 +219,6 @@ SendDriveNo
 	lda	<DriveNo		; get drive number
 	lbsr	MMC_WaitPutRead		; send the drive number
 	rts
-
-DoCreate
-	lda	#CMD_FILE_OPENCRE_IMG	; create image command
-	bra	DoInsertCreate		; go do it
 
 	
 ;	ldb	#C$CR			; carrage return

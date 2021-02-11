@@ -152,6 +152,17 @@
 		Firmware release 1.30 alpha.
 		New in this version :
 			Updated version of FatFS from V0.09 to V0.14.
+			
+	2021-02-11.
+		Firmware release 1.35.
+		New in this version :
+			Squashed a bug (in 6809 firmware) where attempting to load a file from mmc
+			that was an exact multiple of 256 bytes would crash the machine (endless loop).
+			
+			Settings.dgn or Settings.cco are read from disk when a CMD_SET_PLATFORM command
+			is received. This means that the card does not have to be unplugged and
+			re-inserted at power on to get the correct settings, as the 6809 firmware 
+			always issues this command as part of it's boot sequence.
 */
 
 #include <avr/interrupt.h>
@@ -276,7 +287,7 @@ int main(void)
 #else
 	log0("Dragon SD/MMC Interface V2.8 release\n");
 #endif
-	log0("2020-05-29 Ramoth Software.\n");
+	log0("2021-02-11 Ramoth Software.\n");
 	log0(NOW); log0("\n");
     log0i(BLD->bl_compile); log0("\n");
     log0("Bootload maj=%d, min=%d, vers=%02X\n",BLD->blmajor,BLD->blminor,blVersion);
@@ -316,6 +327,10 @@ int main(void)
 		REDLEDOFF();
 	}
 
+	// Check to see if we have a card in, if so load settings etc.
+	if(CardInserted)
+		InitNewCard();
+		
 	while(1)
 	{
 		// Check for incomming activity from Dragon,
