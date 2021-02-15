@@ -4276,7 +4276,8 @@ ldf09          ldx     dskvar                   ; point x to dskcon variables
                inc     BasGenCount              ; increment sector counter                                    
                lda     BasGenCount              ; get the sector counter                                  
                cmpa    #secmax                  ; loaded in 18 sectors? (one track)                                               
-               bhi     ldf36                    ; yes - exit                     
+               bhi     ldf36                    ; yes - exit      
+               
                sta     $03,x                    ; no - save sector number in dsec                                          
                ldd     #$0200                   ; get fdc op code (read) and drive number (0)                                                       
                sta     ,x                       ; save them in dskcon variables (bug - should be std ,x)                                                              
@@ -4291,11 +4292,11 @@ ldf09          ldx     dskvar                   ; point x to dskcon variables
                tst     $06,x                    ; check for errors                           
                beq     ldf09                    ; keep reading if none                               
 
-ldf36          puls    a,b                      ; pull load address off of the stack                                                 
+	       puls    a,b                      ; pull load address off of the stack                                                 
                ldb     #2*20                    ; 'io' error                                                   
                jmp     SysErr                   ; jump to error servicing routine                                          
 
-               puls    a,b                      ; pull ram load address off of the stack                                                
+ldf36          puls    a,b                      ; pull ram load address off of the stack                                                
                ldd     dosbuf                   ; get first two bytes of ram data                                           
                cmpd    #"OS"                    ; look for 'os' (os9) at start of buffer                                                  
                lbeq    dosbuf+2                 ; if 'os' then branch to data loaded in ram                                                        

@@ -19,9 +19,9 @@ SignonMess
 	FCC	/COCO/
 	ENDC
 	
-	FCC	/ MMC V1.35/
+	FCC	/ MMC V1.36/
 	
-	IFdef	DEVEL
+	IFGT DEVEL
 	FCC	/-devel/
 	ENDC
 	

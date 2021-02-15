@@ -4,9 +4,9 @@
 
 __cmd_delete
 
-MFileFlagCopy	equ	'C
-MFileFlagRename	equ	'R
-MFileFlagSync	equ	'S
+MFileFlagCopy	equ	'C'
+MFileFlagRename	equ	'R'
+MFileFlagSync	equ	'S'
 
 CmdMDelete
 		lbsr	GetSendFileName		; Get filename send to MMC
@@ -18,10 +18,10 @@ CmdMDeleteLoop
 		jsr		>BasicKbdIn			; Poll keyboard
 		beq		CmdMDeleteLoop		; No key pressed loop again
 		
-		cmpa	#'N					; No key pressed ?
+		cmpa	#'N'					; No key pressed ?
 		beq		CmdMDeleteExit		; yes : exit
 		
-		cmpa	#'Y					; Yes key pressed ?
+		cmpa	#'Y'					; Yes key pressed ?
 		bne		CmdMDeleteLoop		; no : keep waiting
 		
 		lda		#CMD_FILE_DELETE	; Delete the file

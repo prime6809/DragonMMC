@@ -5,8 +5,8 @@
 *
 * Ed.    Comments                                       Who YY/MM/DD
 
-         nam   LoadAt
-         ttl   Load a file at a fixed location
+         nam   MDsk
+         ttl   Manipulate virtual disk images on DragonMMC sd card.
 
          use    defsfile
 	 use	os9.d

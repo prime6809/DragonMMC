@@ -511,6 +511,7 @@ void mmc_process(void)
 				}
 				else if (received == CMD_GET_FDC_STATUS)
 				{
+					log0c(DEBUG_ENABLED,"FDCStatus:%02X\n",FDCStatus);
 					WriteStatus(FDCStatus);
 					ClearBusy();
 				}	

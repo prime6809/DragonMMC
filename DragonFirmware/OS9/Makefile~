@@ -67,9 +67,7 @@ moddisk: allmods
 	os9 makdir $(MODS),os9
 	os9 copy mods/* $(MODS),mmc
 	os9 attr $(ATTRS) $(MODFILES)
-	os9 copy -l blmmcd $(MODS),blmmcd
-	os9 copy -l blmmcc $(MODS),blmmcc
-	
+	os9 copy -l blmmc $(MODS),blmmc
 
 cmddisk: allcmds
 	os9 format -dr -t40 -e $(CMDS)
@@ -102,10 +100,8 @@ d3: ddiskdesc.asm
 test:
 	@echo $(MODFILES)
 	
-DESTDIRD = /cygdrive/g/Emulate/software/Dragon/disks/64/mods64	
-DESTDIRC = /cygdrive/g/Emulate/software/CoCo/Disks/os9mmc
+DESTDIR = /cygdrive/g/Emulate/software/Dragon/disks/64/mods64	
 cp:	moddisk cmddisk
-	cp $(CMDS) $(DESTDIRD)
-	cp $(MODS) $(DESTDIRD)
-	cp $(CMDS) $(DESTDIRC)
-	cp $(MODS) $(DESTDIRC)
+	cp $(CMDS) $(DESTDIR)
+	cp $(MODS) $(DESTDIR)
+	

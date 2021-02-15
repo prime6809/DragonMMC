@@ -163,6 +163,15 @@
 			is received. This means that the card does not have to be unplugged and
 			re-inserted at power on to get the correct settings, as the 6809 firmware 
 			always issues this command as part of it's boot sequence.
+			
+	2021-02-15.
+		Firmware version 1.36.
+		New in this version :
+			Fixed a bug in rsdos.asm that had been inherited from the "disk basic unraveled"
+			listing from which it was derrived. The bug was an incorrect placement of a label
+			in the DOS command, which meant that after reading the boot track, the command
+			always returned "I/O Error", instead of calling the loaded code.
+			The DOS command now works and will boot a suitably patched version of OS9.
 */
 
 #include <avr/interrupt.h>
